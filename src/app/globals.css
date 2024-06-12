@@ -32,3 +32,74 @@ canvas {
 .z-10 {
   z-index: 10;
 }
+
+.text-shadow {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  .text-shadow {
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.6);
+  }
+} */
+
+/* body {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+body.light {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+body.dark {
+  background-color: #1a202c;
+  color: #f0e7db;
+} */
+
+body {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+body.light {
+  background: linear-gradient(to bottom, #ebf8ff, #d6bcfa, #ebf8ff);
+  color: #333;
+}
+
+body.dark {
+  background: linear-gradient(to bottom, #1a202c, #2d3748, #1a202c);
+  color: #f0e7db;
+}
+
+/* その他のスタイル */
+.header {
+  padding: 1rem;
+  background-color: transparent;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ccc;
+}
+
+.button:active {
+  background-color: #bbb;
+}
+
+.dark .button {
+  background-color: #444;
+}
+
+.dark .button:hover {
+  background-color: #555;
+}
+
+.dark .button:active {
+  background-color: #666;
+}
