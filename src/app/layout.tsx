@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import StarryBackground from './components/StarryBackground'
+import PageTransition from './components/PageTransition'
 
 
 
@@ -21,10 +22,12 @@ export default function RootLayout({
     <html lang="ja" className="bg-gradient-light dark:bg-gradient-dark">
       <body 
         className={`${inter.className}  bg-gradient-to-b from-blue-100 via-purple-300 to-blue-100 min-h-screen`}>
+          <PageTransition>
             <StarryBackground />
               <div className="relative z-10">
                 {children}
               </div>
+          </PageTransition>
       </body>
     </html>
   )
