@@ -23,7 +23,6 @@ export default function RootLayout({
       <body 
         className={`${inter.className}  bg-gradient-to-b from-blue-100 via-purple-300 to-blue-100 min-h-screen`}>
           <PageTransition>
-            <StarryBackground />
               <div className="relative z-10">
                 {children}
               </div>
