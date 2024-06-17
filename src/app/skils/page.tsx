@@ -15,7 +15,7 @@ const page = () => {
             width={400}
             height={400}
             alt='plants'
-          />
+        />
           <div>
             <div>
               <ul>
