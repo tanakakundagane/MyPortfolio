@@ -2,10 +2,12 @@ import Image from 'next/image';
 import Header from './components/Header';
 import { FadeInStagger } from './components/FadeIn';
 import FadeInText from './components/FadeInText';
+import StarryBackground from './components/StarryBackground';
 
 export default function Home() {
   return (
     <div className='min-h-screen flex flex-col starry-background'>
+      <StarryBackground/>
       <Header />
       <div className='flex-grow flex items-center justify-center'>
         <div className='w-[80%] mx-auto flex flex-col items-center    md:flex-row md:gap-40 gap-20'>
