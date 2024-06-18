@@ -120,7 +120,7 @@ const Page = () => {
       <div className='w-[30%] mx-auto bg-black text-white text-center py-4 rounded-lg text-xl md:text-2xl mt-10'>
         <h1>My Skills</h1>
       </div>
-      <div className="flex-grow flex items-center justify-center">
+      <div className="flex-grow flex items-center justify-center pb-10">
         <div className="w-[80%] mx-auto flex flex-col-reverse items-center md:flex-row md:gap-20 gap-20 mt-7">
           <FadeInStagger>
             <div className="flex-1 p-10 md:flex md:gap-10 border-2 md:justify-center bg-indigo-400 rounded-lg w-[100%]">

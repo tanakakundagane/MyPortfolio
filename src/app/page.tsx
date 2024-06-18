@@ -9,7 +9,7 @@ export default function Home() {
     <div className='min-h-screen flex flex-col starry-background'>
       <StarryBackground/>
       <Header />
-      <div className='flex-grow flex items-center justify-center'>
+      <div className='flex-grow flex items-center justify-center pb-10'>
         <div className='w-[80%] mx-auto flex flex-col items-center    md:flex-row md:gap-40 gap-20'>
             <Image
               src='/images/Astro.png'
