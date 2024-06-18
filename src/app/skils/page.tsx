@@ -124,14 +124,14 @@ const Page = () => {
         <div className="w-[80%] mx-auto flex flex-col-reverse items-center md:flex-row md:gap-20 gap-20 mt-7">
           <FadeInStagger>
             <div className="flex-1 p-10 md:flex md:gap-10 border-2 md:justify-center bg-indigo-400 rounded-lg w-[100%]">
-              <ul className="text-center text-xl md:text-2xl">
+              <ul className="text-center text-xl md:text-2xl text-shadow">
                 <FadeIn><li className='pb-3'>HTML</li></FadeIn>
                 <FadeIn><li className='pb-3'>CSS</li></FadeIn>
                 <FadeIn><li className='pb-3'>Javascript</li></FadeIn>
                 <FadeIn><li className='pb-3'>React</li></FadeIn>
                 <FadeIn><li className='pb-3'>Resend</li></FadeIn>
               </ul>
-              <ul className="text-center text-xl md:text-2xl">
+              <ul className="text-center text-xl md:text-2xl text-shadow">
                 <FadeIn><li className='pb-3'>Next.js</li></FadeIn>
                 <FadeIn><li className='pb-3'>Three.js</li></FadeIn>
                 <FadeIn><li className='pb-3'>framer-motion</li></FadeIn>
