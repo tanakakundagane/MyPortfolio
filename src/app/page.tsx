@@ -16,7 +16,7 @@ export default function Home() {
               width={400}
               height={400}
               alt='Astro'
-              className='rounded-b-[35%] w-[40%]'
+              className='rounded-b-[35%] w-[40%] mt-10 md:mt-0'
             />
           <div>
             <FadeInStagger>
