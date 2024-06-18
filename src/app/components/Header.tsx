@@ -4,6 +4,7 @@ import { headerListItem } from "../constants";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import CustomLink from "./CustomLink"; // カスタムリンクコンポーネントをインポート
+import AudioPlayer from "./AudioPlayer";
 
 const Header = () => {
   const [active, setActive] = useState<string>("");
@@ -38,6 +39,10 @@ const Header = () => {
           />
           <p className="text-3xl font-bold pt-2">ASTRO.Doc</p>
         </CustomLink>
+
+        {/* <div className="fixed top-20 md:relative md:top-0">
+          <AudioPlayer/>
+        </div> */}
 
         {/* Header List Items */}
         <div className="hidden md:inline-flex items-center gap-8 text-sm font-bold tracking-wide">

@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import StarryBackground from './components/StarryBackground'
 import PageTransition from './components/PageTransition'
+import AudioPlayer from './components/AudioPlayer'
+import ClientWrapper from './components/ClientWrapper'
 
 
 
@@ -22,11 +24,13 @@ export default function RootLayout({
     <html lang="ja" className="bg-gradient-light dark:bg-gradient-dark">
       <body 
         className={`${inter.className}  bg-gradient-to-b from-blue-100 via-purple-300 to-blue-100 min-h-screen`}>
-          <PageTransition>
-              <div className="relative z-10">
-                {children}
-              </div>
-          </PageTransition>
+          <ClientWrapper>
+            <PageTransition>
+                <div className="relative z-10">
+                  {children}
+                </div>
+            </PageTransition>
+          </ClientWrapper>
       </body>
     </html>
   )

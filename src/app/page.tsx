@@ -3,6 +3,7 @@ import Header from './components/Header';
 import { FadeInStagger } from './components/FadeIn';
 import FadeInText from './components/FadeInText';
 import StarryBackground from './components/StarryBackground';
+import AudioPlayer from './components/AudioPlayer';
 
 export default function Home() {
   return (
