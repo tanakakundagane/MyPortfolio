@@ -5,17 +5,17 @@ export const headerListItem =[
     link: '/'
   },
   {
-    _id:'101',
+    _id:'102',
     title: 'About',
     link: '/about'
   },
   {
-    _id:'101',
+    _id:'103',
     title: 'Skils',
     link: '/skils'
   },
   {
-    _id:'101',
+    _id:'104',
     title: 'Contact',
     link: '/contact'
   },
