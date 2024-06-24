@@ -34,7 +34,7 @@ const pageVariants = {
     transition: {
       duration: 0.8,
       ease: 'easeInOut',
-      delay: 0.1, // 次のページが表示される時間を短く
+      delay: 0.4, // 次のページが表示される時間を短く
     },
   },
 };
