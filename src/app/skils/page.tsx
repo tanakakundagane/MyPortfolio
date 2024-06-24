@@ -31,7 +31,7 @@ const Page = () => {
                   </li>
                 </FadeIn>
                 <FadeIn>
-                  <li className='flex items-center gap-2'>
+                  <li className='pb-8 md:pb-0 flex items-center gap-2'>
                     <Image src='/images/js.png' width={50}height={50} alt='javascript'/>
                     <p>Javascript</p>
                   </li>
@@ -52,7 +52,7 @@ const Page = () => {
                   </li>
                 </FadeIn>
                 <FadeIn>
-                  <li className='flex items-center gap-2'>
+                  <li className='pb-8 md:pb-0 flex items-center gap-2'>
                     <Image src='/images/nextjs.png' width={50}height={50} alt='next.js'/>
                     <p>Next.js</p>
                   </li>
@@ -72,7 +72,7 @@ const Page = () => {
                   </li>
                 </FadeIn>
                 <FadeIn>
-                  <li className='flex items-center gap-2'>
+                  <li className='pb-8 md:pb-0 flex items-center gap-2'>
                     <Image src='/images/nodemailer.png' width={50}height={50} alt='nodemailer'/>
                     <p>Node-mailer</p>
                   </li>
