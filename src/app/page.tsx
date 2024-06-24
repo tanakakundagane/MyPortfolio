@@ -25,7 +25,7 @@ export default function Home() {
                 <FadeInText text="Crafting Digital" /> <br />
                 <FadeInText text="Experiences, Designing Tomorrow" />
               </h1>
-              <h2 className='text-xl xl:text-2xl lg:leading-[50px] w-[70%] text-center mx-auto md:w-[100%] md:text-left text-shadow'>
+              <h2 className='text-xl xl:text-2xl lg:leading-[50px] w-[70%] text-center mx-auto md:w-[100%] md:text-left text-shadow hidden md:block'>
                 <FadeInText text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tenetur debitis eligendi eaque eius earum qui beatae ullam quis, consequuntur ex quod molestiae laudantium esse assumenda natus adipisci neque vitae?" />
               </h2>
             </FadeInStagger>

@@ -3,7 +3,11 @@
 import React, { ReactNode } from 'react';
 import AudioPlayer from './AudioPlayer';
 
-const ClientWrapper = ({ children }: { children: ReactNode }) => {
+interface ClientWrapperProps {
+  children: ReactNode;
+}
+
+const ClientWrapper: React.FC<ClientWrapperProps> = ({ children }) => {
   return (
     <div>
       <AudioPlayer />

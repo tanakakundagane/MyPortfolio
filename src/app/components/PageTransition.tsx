@@ -34,7 +34,7 @@ const pageVariants = {
     transition: {
       duration: 0.8,
       ease: 'easeInOut',
-      delay: 0.4, // 次のページが表示される時間を短く
+      delay: 0.1,
     },
   },
 };
@@ -82,7 +82,7 @@ export default function PageTransition({ children }: { children: ReactNode }) {
         router.push(nextPath);
         setIsAnimating(false);
         setNextPath(null);
-      }, 1000); // 文字が表示されている時間を1秒に設定
+      }, 1000);
     }
   };
 
@@ -115,7 +115,7 @@ export default function PageTransition({ children }: { children: ReactNode }) {
           initial="initial"
           animate="enter"
           variants={pageVariants}
-          // className="relative w-full h-full"
+          className="relative w-full h-full"
         >
           {children}
         </motion.div>
@@ -123,4 +123,3 @@ export default function PageTransition({ children }: { children: ReactNode }) {
     </>
   );
 }
-
