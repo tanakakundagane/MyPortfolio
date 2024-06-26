@@ -2,6 +2,8 @@ import React from 'react';
 import Header from '../components/Header';
 import Image from 'next/image';
 import Link from 'next/link';
+import ThreeScene from '../components/ThreeScene';
+import StarryBackground from '../components/StarryBackground';
 
 const Page = () => {
   // 画像データをオブジェクトの配列として定義します。
@@ -20,7 +22,8 @@ const Page = () => {
   ];
 
   return (
-    <div>
+    <div className="relative z-10 min-h-screen flex flex-col">
+      <StarryBackground />
       <Header />
       <div className="container mx-auto p-4">
         <h1 className="text-3xl font-bold mb-8">My Projects</h1>

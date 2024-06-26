@@ -199,7 +199,7 @@ const Header = () => {
                 <CustomLink 
                   href={item.link} 
                   className={`md:text-xl p-1 gap-3 rounded duration-300 ${
-                    active === item.link ? "bg-black text-white" : "hover:bg-black hover:text-white"
+                    active === item.link ? "bg-white text-black" : "hover:bg-white hover:text-black"
                   }`}
                 >
                   {item.title}
@@ -216,17 +216,17 @@ const Header = () => {
             className="flex flex-col gap-1 justify-center items-center w-8 h-8 relative z-50"
           >
             <div
-              className={`h-0.5 w-8 bg-black transition-transform duration-300 ease-in-out ${
+              className={`h-0.5 w-8 bg-white transition-transform duration-300 ease-in-out ${
                 menuOpen ? "rotate-45 translate-y-1.5" : ""
               }`}
             />
             <div
-              className={`h-0.5 w-8 bg-black transition-opacity duration-300 ease-in-out ${
+              className={`h-0.5 w-8 bg-white transition-opacity duration-300 ease-in-out ${
                 menuOpen ? "opacity-0" : ""
               }`}
             />
             <div
-              className={`h-0.5 w-8 bg-black transition-transform duration-300 ease-in-out ${
+              className={`h-0.5 w-8 bg-white transition-transform duration-300 ease-in-out ${
                 menuOpen ? "-rotate-45 -translate-y-1.5" : ""
               }`}
             />
