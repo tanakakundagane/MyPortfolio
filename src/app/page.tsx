@@ -12,18 +12,27 @@ export default function Home() {
       <Header />
       <div className='flex-grow flex items-center justify-center pb-10'>
         <div className='w-[80%] mx-auto flex flex-col items-center    md:flex-row md:gap-40 gap-20'>
+            {/* <Image
+              src='/images/Astro.png'
+              width={400}
+              height={400}
+              alt='Astro'
+              className='rounded-b-[35%] w-[40%] mt-10 md:mt-0'
+            /> */}
             <Image
               src='/images/Astro.png'
               width={400}
               height={400}
               alt='Astro'
               className='rounded-b-[35%] w-[40%] mt-10 md:mt-0'
+              placeholder="blur"
+              blurDataURL="/images/placeholder.png" // プレースホルダー画像のURL
             />
           <div>
             <FadeInStagger>
               <h1 className='text-4xl xl:text-5xl font-bold leading-relaxed text-shadow w-[70%] mx-auto text-center md:text-left md:w-[100%]'>
-                <FadeInText text="Crafting Digital" /> <br />
-                <FadeInText text="Experiences, Designing Tomorrow" />
+                <FadeInText delay={0.2} text="Crafting Digital" /> <br />
+                <FadeInText delay={0.3} text="Experiences, Designing Tomorrow" />
               </h1>
               <h2 className='text-xl xl:text-2xl lg:leading-[50px] w-[70%] text-center mx-auto md:w-[100%] md:text-left text-shadow hidden md:block'>
                 <FadeInText text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tenetur debitis eligendi eaque eius earum qui beatae ullam quis, consequuntur ex quod molestiae laudantium esse assumenda natus adipisci neque vitae?" />

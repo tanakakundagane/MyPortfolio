@@ -12,14 +12,14 @@ const overlayVariants = {
   enter: {
     y: '0%',
     transition: {
-      duration: 0.8,
+      duration: 0.7,
       ease: 'easeInOut',
     },
   },
   exit: {
     y: '100%',
     transition: {
-      duration: 0.8,
+      duration: 0.7,
       ease: 'easeInOut',
     },
   },
@@ -34,7 +34,7 @@ const pageVariants = {
     transition: {
       duration: 0.8,
       ease: 'easeInOut',
-      delay: 0.1,
+      delay: 0.5,
     },
   },
 };
@@ -82,7 +82,7 @@ export default function PageTransition({ children }: { children: ReactNode }) {
         router.push(nextPath);
         setIsAnimating(false);
         setNextPath(null);
-      }, 1000);
+      }, 950);
     }
   };
 
