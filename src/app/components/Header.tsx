@@ -210,7 +210,7 @@ const Header = () => {
         </div>
 
         {/* Hamburger Menu */}
-        <div className="md:hidden z-20">
+        <div className="md:hidden z-30">
           <button
             onClick={toggleMenu}
             className="flex flex-col gap-1 justify-center items-center w-8 h-8 relative z-50"
@@ -237,7 +237,7 @@ const Header = () => {
       {/* Overlay */}
       {menuOpen && (
         <div
-          className="fixed inset-0 bg-black opacity-50 z-0"
+          className="fixed inset-0 bg-black opacity-50 z-20"
           onClick={closeMenu}
         ></div>
       )}
@@ -247,7 +247,7 @@ const Header = () => {
         initial="hidden"
         animate={menuOpen ? "visible" : "hidden"}
         variants={menuVariants}
-        className="fixed top-0 right-0 h-full w-64 bg-sky-950 shadow-lg z-10 text-white flex flex-col gap-8 p-10 pt-20 space-y-4"
+        className="fixed top-0 right-0 h-full w-64 bg-sky-950 shadow-lg z-20 text-white flex flex-col gap-8 p-10 pt-20 space-y-4"
       >
         {headerListItem.map((item, index) => (
           <li key={index} className="list-none">
