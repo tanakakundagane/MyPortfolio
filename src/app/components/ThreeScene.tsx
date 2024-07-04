@@ -43,7 +43,6 @@
 // };
 
 // export default ThreeScene;
-
 'use client';
 
 import React, { useRef } from 'react';
@@ -57,7 +56,7 @@ const Earth = ({ isMobile }: { isMobile: boolean }) => {
   const texture = useTexture('/textures/earth2.jpg'); // 地球のテクスチャ
 
   useFrame(() => {
-    ref.current.rotation.y += 0.001; // 回転スピードを遅くする
+    ref.current.rotation.y += 0.001; // 地球の回転スピードを遅くする
   });
 
   const position: [number, number, number] = isMobile ? [0, 0, 0] : [-5, -0.5, 0];
@@ -78,10 +77,13 @@ const Moon = ({ isMobile }: { isMobile: boolean }) => {
   const moonDistance = isMobile ? 3.5 : 4.5; // 地球と月の距離を近く
 
   useFrame(({ clock }) => {
-    const t = clock.getElapsedTime() * 0.2; // 月の回転スピード
+    const t = clock.getElapsedTime() * 0.3; // 月の回転スピード
     ref.current.position.x = earthPosition[0] + moonDistance * Math.cos(t);
     ref.current.position.y = earthPosition[1] + moonDistance * Math.sin(t) * Math.sin(Math.PI / 6); // 軌道の角度を調整
     ref.current.position.z = earthPosition[2] + moonDistance * Math.sin(t) * Math.cos(Math.PI / 6);
+    
+    // 月の自転
+    ref.current.rotation.y += 0.01;
   });
 
   const moonSize = isMobile ? 0.3 : 0.5; // 月のサイズをさらに小さく変更
