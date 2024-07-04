@@ -97,8 +97,8 @@ export default function Home() {
           <div className="w-full md:w-1/2">
             <FadeInStagger>
               <h1 className='text-4xl xl:text-5xl font-bold leading-relaxed text-shadow text-center md:text-left'>
-                <FadeInText delay={0.2} text="Crafting Digital" /> <br />
-                <FadeInText delay={0.3} text="Experiences, Designing Tomorrow" />
+                <FadeInText delay={0.2} text="Thank you for " /> <br />
+                <FadeInText delay={0.3} text="visiting my portfolio site" />
               </h1>
               <h2 className='text-xl xl:text-2xl lg:leading-[50px] w-full text-center md:text-left text-shadow mt-4 hidden md:block'>
                 <FadeInText text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tenetur debitis eligendi eaque eius earum qui beatae ullam quis, consequuntur ex quod molestiae laudantium esse assumenda natus adipisci neque vitae?" />
