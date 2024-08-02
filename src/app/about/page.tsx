@@ -18,6 +18,11 @@ const Page = () => {
       imageUrl: '/images/ホトうさぎ.png',
       link: 'https://hotousagi.nicework.co.jp/'
     },
+    {
+      title: 'Project 3',
+      imageUrl: '/images/mosyacode.png',
+      link: 'https://biyou-mosya-code.vercel.app/'
+    },
     // 他のプロジェクトもここに追加
   ];
 
